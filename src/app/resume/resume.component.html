@@ -1,0 +1,123 @@
+<!-- <div fxLayoutAlign="center center">123</div> -->
+<div class="outest-container" fxLayout="column" fxLayoutAlign="start center" fxLayoutGap="40px">
+  <div class="page-navgation" fxLayoutAlign="center center">. . .</div>
+  <div fxFlex="40" class="outer-container bottom-border">
+    <div class="person-details">
+      <div class="person-flex" fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap.xs="10px"
+                fxLayoutAlign="start center" [ngClass.xs]="'person-flex-part'">
+                <!-- image flex -->
+                <!-- style="height: 100%; width: 100%" -->
+                <div fxFlex="18" fxFlex.xs="40" fxLayoutAlign="center center" [ngClass.xs]="'profile-pic-xs'">
+                    <div style="height: 190px;
+                          width: 162px;overflow: hidden;" fxLayoutAlign="center center">
+                        <img class="profile-pic" src="../../assets/images/profile-pic.jpg" />
+                    </div>
+                </div>
+                <!-- name and heading  -->
+                <!-- style="height: 100%; width: 100%" -->
+                <div fxFlex="48" fxFlex.xs="20" fxLayoutAlign="start center" fxLayoutAlign.xs="center center"
+                    [ngClass.xs]="'name-des-xs'">
+                    <div class="name-and-designation" fxLayoutAlign="start stretch" fxLayoutGap="7px" fxLayout="column">
+                        <div class="name" fxLayoutAlign.xs="center center">
+                            RHYTHM KHANNA
+                        </div>
+
+                        <div fxFlex="40" class="designation" fxLayoutAlign.xs="center center">
+                            UI/UX Engineer
+                        </div>
+
+                        <div class="description" fxLayoutAlign.xs="center center">
+                            Hi, Welcome to my space !!
+                        </div>
+                    </div>
+                </div>
+                <!-- contant details -->
+                <!-- style="height: 100%; width: 100%"  -->
+
+                <div fxFlex="34" fxFlex.xs="40" fxLayoutAlign="end center" fxLayoutAlign.xs="center center">
+                    <div 
+                    style="width: 100%"
+                    [ngClass.xs]="'other-details-xs'"
+                    fxLayout="column" fxLayoutGap="12px" 
+                    fxLayoutAlign="end center"
+                    fxLayoutAlign.xs="center center">
+
+                        <div class="detail-element" style="width: 100%;" *ngFor="let val of arr; let i = index">
+                            <!-- style="width: 100%; height: 100%" -->
+                            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="4px">
+                                <div fxFlex="40" fxLayoutAlign="end center" fxLayoutAlign.xs="start center"
+                                    [ngClass.xs]="'details-header-margin'"
+                                    class="header">
+                                    {{ val.name }}:
+                                </div>
+
+                                <!-- <div fxFlex="4">
+                                </div> -->
+
+                                <div fxFlex="50" class="ans" [ngClass]="{ 'light-blue': i == 4 }">
+                                    {{ val.ans }}
+                                </div>
+                            </div>
+                        </div>
+                        <div style="color: white;width: 100%;" fxLayout="row" fxLayoutAlign="start center"
+                            fxLayoutAlign.xs="start center">
+                            <div fxFlex="30" fxFlex.xs="0.1"></div>
+                            <div fxLayoutAlign="start center" fxLayoutGap="12px" fxFlex="36">
+                                <div>
+                                    <a target="_blank" href="https://www.linkedin.com/in/rhythm-khanna-b18521172/">
+                                        <img style="width: 23px;cursor: pointer;"
+                                            src="https://img.icons8.com/ultraviolet/40/000000/linkedin.png" />
+                                    </a>
+
+                                </div>
+                                <div>
+                                    <a target="_blank" href="https://www.quora.com/profile/Rhythm-Khanna-1">
+                                        <img style="width: 23px;cursor: pointer;"
+                                            src="https://img.icons8.com/doodle/48/000000/quora--v1.png" />
+                                    </a>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div fxFlex="24"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="resume-download-container">
+                    <div>
+                        <img title="download resume" (click)="downloadResume()" class="download-resume-img"
+                            src="../../../assets/icons/download_resume.png" alt="icon_resume">
+                    </div>
+                </div>
+            </div>
+    </div>
+  </div>
+
+  <!-- <div class="second-container">
+
+    <div fxLayout="row" fxLayoutAlign="start start" class="second-flex-container full-height">
+
+      <div fxFlex=75 class="expansion-container full-height">
+        <app-expand-details [themeColor]="'#20cae5'" [expansionData]="expansionInfoEmployment"></app-expand-details>
+        <app-expand-details [themeColor]="'rgb(83, 165, 58)'" [expansionData]="expansionInfoTechContribution">
+        </app-expand-details>
+        
+      </div>
+
+      <div fxFlex class="stats-container">
+        <app-right-details-panel></app-right-details-panel>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="full-height full-width footer-container" fxLayoutAlign="end center">
+    Developed in <span><img style="width: 15px; margin-left: 4px; margin-right: 4px;"
+        src="https://img.icons8.com/color/48/000000/angularjs.png" /></span> by
+    me from <a style="margin-left: 4px; color: #4b4fbb;" href="https://www.google.com">Scratch </a>
+  </div>
+</div> -->
+
+
+<!-- <img src="https://img.icons8.com/ultraviolet/40/000000/linkedin.png"/>   Linked In image -->
+<!-- <img src="https://img.icons8.com/doodle/48/000000/quora--v1.png"/>   Quora Profile -->

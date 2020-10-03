@@ -1,0 +1,126 @@
+// .outest-container {
+  .expansion-panel-container {
+    // something will be defined here
+    padding-top: 0px;
+    padding: 20px;
+  
+    background: #242121;
+    .header-container-0 {
+      .header-flex-container {
+        width: 100%;
+        // height: auto;
+        .header-flex {
+          width: 100%;
+          height: 100%;
+          color: white;
+          .open-button {
+            z-index: 2;
+            background: #98ccfd;
+            height: 100%;
+            .expand-icon {
+              width: 27px;
+              margin-left: 3px;
+            }
+          }
+  
+          .title {
+            height: 100%;
+            padding-left: 14px;
+            // background: #3e3c3c;
+            background: #343434;
+            color: white;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  
+    .expansion-panel-body {
+      // background: ;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background: #242121;
+      border-bottom: 2px solid #3a3a3a;
+      // background: lightcoral;
+      .description-block {
+        .description-header {
+          height: 40px;
+          // border: 0.5px solid black;
+          // padding: 2px;
+          // background: lightgray;
+          .header-flex {
+            height: 100%;
+            color: white;
+            .project-heading-details {
+              margin-bottom: 10px;
+              .project-undertaken-container {
+                color: #f7f0f0;
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 4px;
+              }
+              .sub-header-container {
+                margin-bottom: 5px;
+                color: #8f8f8f;
+                font-size: 16px;
+                font-weight: 300;
+              }
+            }
+  
+            .project-timing {
+              color: #ababab;
+              font-weight: 300;
+            }
+          }
+        }
+  
+        .description-footer {
+          margin-top: 34px;
+          height: auto;
+          // background: #3e3c3c;
+          padding: 14px 3px 3px 3px;
+          color: #8f8f8f;
+          font-size: 14px;
+          font-family: Roboto;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  
+  .full-height {
+    height: 100%;
+  }
+  
+  .ball-container {
+    .pointer-ball {
+      margin-left: 5px;
+      width: 16px;
+      height: 16px;
+      border-radius: 8px;
+      // border: 1px solid white;
+      .pointer-ball-arrow {
+        width: 12px;
+        transform: rotate(-90deg);
+        // padding-left: 0px;
+        padding-top: 2px;
+      }
+    }
+  }
+  
+  .list-container {
+    color: rgb(138, 131, 131);
+    font-family: Roboto;
+    font-weight: 500;
+    .ul-container {
+      padding-left: 18px !important;
+    }
+  }
+  
+  .badge-info{
+    width: 100%;
+    padding-left: 23px;
+    color: #969696;
+    font-size: 10px;
+  }
+  

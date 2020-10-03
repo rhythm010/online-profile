@@ -1,1 +1,151 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "angular-material-demo-theme.scss";
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  margin: 0;
+}
+
+#mera-mat-expansion-panel {
+  .mat-expansion-indicator {
+    display: none !important;
+  }
+
+  .header-container-0 {
+    .mat-content {
+      height: 100%;
+    }
+    .mat-expansion-panel-header {
+      .ng-tns-c4-1 {
+        .ng-trigger {
+          .ng-trigger-expansionHeight {
+            .ng-star-inserted {
+              .mat-expanded {
+                //
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header-container-0 {
+    height: 35px;
+    // padding-left: 0px;
+    padding: 0px;
+  }
+
+  .mat-expansion-panel-body {
+    padding: 0;
+  }
+
+  // .mat-expansion-panel {
+  // background: lightgray;
+  border-radius: 0px;
+  box-shadow: none;
+  // }
+}
+
+// .block-1 {
+//   .mat-progress-bar {
+//     height: 20px;
+//   }
+//   .mat-progress-bar-fill::after {
+//     background-color: red;
+//   }
+//   .mat-progress-bar-buffer {
+//     background: blue;
+//   }
+// }
+
+.block-1 {
+  .mat-progress-bar {
+    height: 20px;
+  }
+  .mat-progress-bar-fill::after {
+    background-color: rgb(63, 63, 163);
+  }
+  .mat-progress-bar-buffer {
+    background: #2b2b2b;
+  }
+}
+
+.block-2 {
+  .mat-progress-bar {
+    height: 20px;
+  }
+  .mat-progress-bar-fill::after {
+    background-color: #20cae5;
+  }
+  .mat-progress-bar-buffer {
+    background: #2b2b2b;
+  }
+}
+
+.block-3 {
+  .mat-progress-bar {  
+    height: 20px;
+  }
+  .mat-progress-bar-fill::after {
+    background-color: rgb(83, 165, 58);
+  }
+  .mat-progress-bar-buffer {
+    background: #2b2b2b;
+  }
+}
+
+.block-4 {
+  .mat-progress-bar {
+    height: 20px;
+  }
+  .mat-progress-bar-fill::after {
+    background-color: #fe5c1e;
+  }
+  .mat-progress-bar-buffer {
+    background: #2b2b2b;
+  }
+}
+
+.block-5 {
+  .mat-progress-bar {
+    height: 20px;
+  }
+  .mat-progress-bar-fill::after {
+    background-color: #e7a718;
+  }
+  .mat-progress-bar-buffer {
+    background: #2b2b2b;
+  }
+}
+
+.block-6 {
+  .mat-progress-bar {
+    height: 20px;
+  }
+  .mat-progress-bar-fill::after {
+    background-color: red;
+  }
+  .mat-progress-bar-buffer {
+    background: #2b2b2b;
+  }
+}
+
+.full-height-width {
+  height: 100%;
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/*
+.grid-test-1 > figure.mat-figure {
+  justify-content: flex-start !important;
+}
+*/

@@ -1,0 +1,94 @@
+<div class="expansion-panel-container">
+  <mat-expansion-panel id="mera-mat-expansion-panel" [expanded]="ispanelOpen">
+    <mat-expansion-panel-header class="header-container-0" collapsedHeight="28px" expandedHeight="28px">
+      <div class="header-flex-container">
+        <div fxLayout="row" fxLayoutAlign="start center" class="header-flex">
+
+          <div fxFlex="4" class="open-button" [ngStyle]="{'background': themeColor}" fxLayoutAlign="start center">
+            <img class="expand-icon" src="../../../assets/icons/arrow_white_transparent.png" alt="icon_expand">
+          </div>
+
+          <div fxFlex class="title" fxLayoutAlign="start center">
+            {{expansionData.title | uppercase}}
+          </div>
+
+        </div>
+      </div>
+    </mat-expansion-panel-header>
+    <div *ngFor="let info of expansionData.data" (mouseover)="onMouseHoverOut()" class="expansion-panel-body">
+
+      <div class="description-block">
+        <div class="description-header">
+
+          <div fxLayout="row" fxLayoutAlign="start center" class="header-flex">
+
+            <div fxFlex="5" class="ball-container full-height">
+              <div class="pointer-ball" fxLayoutAlign="center center" [ngStyle]="{'background': themeColor}">
+                <img class="pointer-ball-arrow" src="../../../assets/icons/arrow_white_transparent.png"
+                  alt="icon_expand">
+              </div>
+            </div>
+
+            <div fxFlex="83" class="full-height project-heading-details">
+
+              <div class="project-undertaken-container">
+                {{info.header}}
+              </div>
+              <div class="sub-header-container">
+                {{info.subHeader}}
+              </div>
+              <div *ngIf="info.badge" style="color: white;cursor: pointer;" fxLayoutAlign="start center" fxLayout="row">
+                <img (mouseover)="moveOverBadge($event)" style="width: 20px"
+                  src="https://img.icons8.com/ultraviolet/50/000000/police-badge.png" />
+                <div *ngIf="showBadge" class="badge-info">*Achieved the top rating for the year 2019</div>
+              </div>
+
+              <div *ngIf="info['code']">
+                <img title="WIP" style="width:19px;cursor:pointer"
+                  src="https://img.icons8.com/ultraviolet/40/000000/code.png" />
+              </div>
+
+            </div>
+
+            <div *ngIf="info.endYear >= 0" fxFlex class="full-height project-timing">
+              {{info.startYear}} - {{info.endYear || 'Present'}}
+            </div>
+
+            <div *ngIf="info.endYear == -1" fxFlex class="full-height project-timing" fxLayoutAlign="end center">
+              {{info.startYear}}
+            </div>
+
+          </div>
+
+        </div>
+
+        <div *ngIf="info.header !== 'Tech Mahindra Ltd'" class="description-footer">
+          <p *ngFor="let detail of info.details" style="margin: 0px !important;">
+            {{detail}}
+          </p>
+        </div>
+
+        <div *ngIf="info.header === 'Tech Mahindra Ltd'" class="description-footer">
+          <p style="margin: 0px">Started my journey by writing backend logic for features in <a target="blank"
+              style="color: #4b4fbb;text-decoration: none;margin: 0px !important;"
+              href="https://cache.techmahindra.com/static/img/pdf/Xretail-Brochure-2.pdf">X-Retail</a> using Python,
+            Flask and mondoDB</p>
+          <p style="margin: 0px">Shifted to Front-End Development in my second project<a target="blank"
+              style="color: #4b4fbb;text-decoration: none;margin: 0px !important;"
+              href="https://www.techmahindra.com/en-in/techmnxt/techbets/new-age-delivery/"> New Age Delivery </a> which
+            proved to
+            be an amazing learning experience in Front-End</p>
+        </div>
+
+
+        <div class="list-container" style="color: rgb(138, 131, 131);">
+          <ul class="ul-container">
+            <li *ngFor="let point of info.pointers">{{point}}</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </mat-expansion-panel>
+</div>
+

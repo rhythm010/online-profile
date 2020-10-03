@@ -1,0 +1,189 @@
+.outest-container {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    background: #2b2b2b;
+    padding: 40px 40px 0 30px;
+    .page-navgation {
+        cursor: pointer;
+        margin-bottom: 4px !important;
+        color: white;
+    }
+    .outer-container {
+        width: 100%;
+        height: 100%;
+        min-height: 42% !important;
+        background: #242121;
+        // min-width: 714px;
+
+        .person-details {
+            width: 100%;
+            height: auto;
+            // overflow: auto;
+            .person-flex {
+                // background: lightblue;
+                position: relative;
+                width: 100%;
+                height: auto;
+                padding: 20px;
+                overflow-y: scroll;
+                // min-height: 130px;
+                // min-width: 698px;
+                .name-and-designation {
+                    height: 100%;
+                    padding: 10px 0px 0px 0px;
+                    .name {
+                        color: white;
+                        margin-bottom: 10px;
+                        font-family: Roboto;
+                        font-weight: bold;
+                        font-size: 23px;
+                    }
+                    .designation {
+                        color: #4183a4;
+                        font-family: Roboto;
+                        font-weight: 300;
+                    }
+                }
+                .detail-element {
+                    // width: 100% !important;
+                    font-family: Roboto;
+                    .header {
+                        color: white;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    .ans {
+                        color: #888787;
+                        font-size: 13px;
+                        font-weight: 300;
+                    }
+                }
+
+                .resume-download-container {
+                    position: absolute;
+                    right: 1%;
+                    top: 5%;
+                    .download-resume-img {
+                        width: 21px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .description {
+            // width: 155%;
+            height: 60px;
+            font-weight: 300;
+            font-size: 14px;
+            font-family: Roboto;
+            color: #888787;
+        }
+    }
+
+    .profile-pic-xs {
+        height: 190px !important;
+    }
+
+    .name-des-xs {
+        height: 131px !important;
+    }
+
+    .other-details-xs {
+        height: 154px !important;
+    }
+
+    .person-flex-part {
+        // height: 545px !important;
+        min-height:100vh !important;
+    }
+
+    .details-header-margin{
+        margin-right: 10px !important;
+    }
+
+    // second container starts from here
+    .menu-box {
+        height: 46px;
+        background: #02be7e;
+    }
+    .icon-common {
+        width: 20px;
+    }
+    .bottom-border {
+        // border-bottom: 2px solid #4f4f4f;
+        // for them usage
+        // border: 1px solid black;
+        // min-height: 35%;
+    }
+    .employment-container {
+        height: 100%;
+        min-height: 30% !important;
+        width: 100%;
+        // color: white;
+        .flex-container {
+            // padding: 40px;
+            .graph-container {
+                padding: 20px;
+            }
+            .details-container {
+                padding: 20px;
+            }
+        }
+    }
+    .education-container {
+        width: 100%;
+        color: white;
+    }
+    .light-blue {
+        color: #4183a4 !important;
+    }
+    .profile-pic {
+        width: 164px;
+    }
+    .spread {
+        height: 100%;
+        width: 100%;
+    }
+    .default-b {
+        border: 1px solid black;
+    }
+}
+
+.second-container {
+    width: 100%;
+    // padding: 10px;
+    margin-bottom: 2px !important;
+    height: auto;
+    min-width: 714px;
+    // border: 1px solid black;
+    background: #242121;
+
+    .second-flex-container {
+        // padding: 10px;
+        // border: 1px solid black;
+        .expansion-container {
+            // background: #3e3c3c;
+            padding: 10px;
+            min-width: 450px;
+            border-right: 4px solid #2b2b2b;
+        }
+        .stats-container {
+            // background: lightseagreen;
+            background: #242121;
+            padding: 10px;
+            min-width: 239px;
+            min-height: 700px;
+        }
+    }
+}
+
+.full-height {
+    height: 100%;
+}
+
+.footer-container {
+    color: #a5a0a0;
+    font-family: monospace;
+    font-size: 10px;
+}
