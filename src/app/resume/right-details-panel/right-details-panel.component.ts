@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild, Input } from '@angular/core';
 import { trigger, transition, style, animate, state } from '@angular/animations';
 import { ChartType, ChartOptions } from 'chart.js';
 
@@ -23,6 +23,10 @@ export class RightDetailsPanelComponent implements OnInit {
   @ViewChild("myChart", null) _myChart: ElementRef;
   @ViewChild('scrolling', null) scrollingPart: ElementRef;
 
+
+  @Input()
+  frameworkData: any = [];
+
   // bar variables
   mode = 'determinate';
   value = 50;
@@ -46,8 +50,6 @@ export class RightDetailsPanelComponent implements OnInit {
     },
     tooltips: {
       custom: (tooltipModel) => {
-        // tooltipModel.x = (this._myChart.nativeElement.width / 1.5);
-        // tooltipModel.y = (this._myChart.nativeElement.height / 1.5);
         tooltipModel.x = 200;
         tooltipModel.y = 5;
       }

@@ -107,6 +107,30 @@ export class ResumeComponent implements OnInit {
     }]
   };
 
+  frameWorkData = [
+    {
+      color: '#20cae5',
+      title: 'Angular',
+      score: 4,
+      iconUrl: 'https://img.icons8.com/color/48/000000/angularjs.png',
+      width: 30
+    },
+    {
+      color: ' rgb(83, 165, 58)',
+      title: 'Node',
+      score: 3,
+      iconUrl: 'https://img.icons8.com/color/48/000000/nodejs.png',
+      width: 45
+    },
+    {
+      color: '#e7a718',
+      title: 'Flask',
+      score: 2,
+      iconUrl: 'https://img.icons8.com/color/48/000000/python.png',
+      width: 35
+    },
+  ];
+
   constructor() { }
 
   ngOnInit() {

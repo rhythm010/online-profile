@@ -1,0 +1,18 @@
+<div class="bubble-outer-container">
+
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="16%" class="bubble-flex-container">
+        <div fxFlex="20" class="skill-container">
+            <!-- {{data.title}} -->
+            <img [src]="data.iconUrl" [title]="data.title"
+                [ngStyle]="{'width': data.width + 'px', 'cursor': 'pointer'}">
+        </div>
+        <div fxFlex="80" class="circles-container">
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="5px">
+                <div *ngFor="let ball of mainList; let i = index" class="round-figure"
+                    [ngStyle]="{'background': (i <= data.score - 1 ) ? data.color : ''}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

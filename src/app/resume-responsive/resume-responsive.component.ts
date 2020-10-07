@@ -114,7 +114,8 @@ export class ResumeResponsiveComponent implements OnInit {
 
   // method will be used to download the resume from the site
   downloadResume() {
-
+    const url = 'https://firebasestorage.googleapis.com/v0/b/online-profile-16a6e.appspot.com/o/RHYTHM%20KHANNA.pdf?alt=media&token=e42ccc38-40dc-4544-91a4-4f3a6825ce06';
+    window.open(url, "_blank");
   }
 
 }

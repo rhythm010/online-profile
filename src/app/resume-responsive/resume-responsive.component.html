@@ -3,7 +3,7 @@
 
     <div fxFlex="40" class="outer-container bottom-border" [ngClass.xs]="'person-flex-part'">
         <div class="person-flex" fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap.xs="10px"
-            fxLayoutAlign="start center" [ngClass.xs]="'person-flex-part'">
+            fxLayoutAlign="start start" fxLayoutAlign.xs="start center" [ngClass.xs]="'person-flex-part'">
 
             <div fxFlex="18" fxFlex.xs="40" fxLayoutAlign="center center" [ngClass.xs]="'profile-pic-xs'">
                 <div style="height: 190px;
@@ -83,13 +83,13 @@
 
         <div fxLayout="row" fxLayout.xs="column" [ngClass.xs]="'flex-second-container'" fxLayoutAlign="start start"
             fxLayoutAlign.xs="center center" class="second-flex-container">
-            <!-- <div fxFlex=75 fxFlex.xs="100" class="expansion-container full-height">
+            <div fxFlex=75 fxFlex.xs="100" class="expansion-container full-height" [ngStyle.xs]="{'display': 'none'}">
                 <app-expand-details [themeColor]="'#20cae5'" [expansionData]="expansionInfoEmployment">
                 </app-expand-details>
                 <app-expand-details [themeColor]="'rgb(83, 165, 58)'" [expansionData]="expansionInfoTechContribution">
                 </app-expand-details>
-                Hello
-            </div> -->
+                <!-- Hello -->
+            </div>
 
             <div fxFlex="25" fxFlex.xs="100" class="stats-container" [ngClass.xs]="'stats-container-xs'">
                 <app-right-details-panel></app-right-details-panel>

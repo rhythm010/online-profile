@@ -4,7 +4,7 @@
       <div class="header-flex-container">
         <div fxLayout="row" fxLayoutAlign="start center" class="header-flex">
 
-          <div fxFlex="4" class="open-button" [ngStyle]="{'background': themeColor}" fxLayoutAlign="start center">
+          <div fxFlex="4" class="open-button" [ngStyle]="{'background': themeColor}" [ngStyle.xs]="{'display': 'none'}" fxLayoutAlign="start center">
             <img class="expand-icon" src="../../../assets/icons/arrow_white_transparent.png" alt="icon_expand">
           </div>
 
