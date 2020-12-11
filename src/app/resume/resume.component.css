@@ -1,0 +1,148 @@
+.outest-container {
+  height: auto;
+  width: 100%;
+  background: #2b2b2b;
+  padding: 40px 40px 20px 30px;
+}
+
+.outest-container .page-navgation {
+  cursor: pointer;
+  margin-bottom: 4px !important;
+  color: white;
+}
+
+.outest-container .outer-container {
+  width: 100%;
+  background: #242121;
+}
+
+.outest-container .outer-container .person-flex {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.outest-container .outer-container .person-flex .name-and-designation {
+  height: 100%;
+}
+
+.outest-container .outer-container .person-flex .name-and-designation .name {
+  color: white;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.outest-container .outer-container .person-flex .name-and-designation .designation {
+  color: #4183a4;
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.outest-container .outer-container .person-flex .detail-element {
+  font-family: Roboto;
+}
+
+.outest-container .outer-container .person-flex .detail-element .header {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.outest-container .outer-container .person-flex .detail-element .ans {
+  color: #888787;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.outest-container .outer-container .person-flex .resume-download-container {
+  position: absolute;
+  right: 1%;
+  top: 5%;
+}
+
+.outest-container .outer-container .person-flex .resume-download-container .download-resume-img {
+  width: 21px;
+  cursor: pointer;
+}
+
+.outest-container .outer-container .description {
+  height: 60px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: Roboto;
+  color: #888787;
+}
+
+.outest-container .profile-pic-xs {
+  height: 190px !important;
+}
+
+.outest-container .name-des-xs {
+  height: 131px !important;
+}
+
+.outest-container .other-details-xs {
+  height: 154px !important;
+}
+
+.outest-container .person-flex-part {
+  min-height: 100vh !important;
+}
+
+.outest-container .details-header-margin {
+  margin-right: 10px !important;
+}
+
+.outest-container .light-blue {
+  color: #4183a4 !important;
+}
+
+.outest-container .profile-pic {
+  width: 164px;
+}
+
+.outest-container .second-container {
+  width: 100%;
+  color: white;
+  margin-bottom: 2px !important;
+  background: #242121;
+}
+
+.outest-container .second-container .second-flex-container {
+  color: white;
+  height: auto;
+}
+
+.outest-container .second-container .second-flex-container .expansion-container {
+  padding: 10px;
+  border-right: 4px solid #2b2b2b;
+}
+
+.outest-container .second-container .second-flex-container .stats-container {
+  padding: 10px;
+  height: auto;
+}
+
+.outest-container .second-container .second-flex-container .stats-container-xs {
+  height: auto;
+  min-height: 70vh !important;
+}
+
+.flex-second-container {
+  min-height: 50vh !important;
+  height: auto;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.footer-container {
+  color: #a5a0a0;
+  font-family: monospace;
+  font-size: 10px;
+}
+/*# sourceMappingURL=resume.component.css.map */

@@ -3,7 +3,7 @@
     width: 100%;
     // overflow-y: scroll;
     background: #2b2b2b;
-    padding: 40px 40px 0 30px;
+    padding: 40px 40px 20px 30px;
     .page-navgation {
         cursor: pointer;
         margin-bottom: 4px !important;
@@ -113,13 +113,14 @@
 
     .second-container {
         width: 100%;
+        height: auto !important;
         // height: 100%;
         color: white;
         // padding: 10px;
         margin-bottom: 2px !important;
         // min-width: 714px;
-        
-        // background: #242121;
+
+        background: #242121;
 
         .second-flex-container {
             color: white;
@@ -134,14 +135,14 @@
             }
             .stats-container {
                 // background: lightseagreen;
-                background: #242121;
+                // background: #242121;
                 padding: 10px;
                 height: auto;
                 // min-width: 239px;
                 // min-height: 700px;
             }
 
-            .stats-container-xs{
+            .stats-container-xs {
                 min-height: 50vh !important;
             }
         }
@@ -166,3 +167,51 @@
     font-family: monospace;
     font-size: 10px;
 }
+
+.outer-container {
+    border: 1px solid black;
+    // height: 40px;
+    // overflow: auto;
+    padding: 20px;
+    .inner-container {
+        display: block;
+        border: 1px solid blue;
+        padding: 20px;
+    }
+
+    .inner-container-2 {
+        display: block;
+        border: 1px solid red;
+        padding: 20px;
+        height: 300px;
+        width: 200px;
+    }
+
+    .inner-container-3 {
+        border: 1px solid lightcoral;
+        height: 100%;
+        position: relative;
+    }
+
+    .small-box-0 {
+        border: 2px solid green;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+    }
+
+    .small-box {
+        border: 2px solid black;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+// working with SCSS and its featurs
+
+
+@import './variables';
+@import './custom';
+
+
+

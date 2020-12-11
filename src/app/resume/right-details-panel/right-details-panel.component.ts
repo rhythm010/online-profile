@@ -25,7 +25,27 @@ export class RightDetailsPanelComponent implements OnInit {
 
 
   @Input()
-  frameworkData: any = [];
+  frameworkData: any = [{
+    color: '#20cae5',
+    title: 'Angular',
+    score: 4,
+    iconUrl: 'https://img.icons8.com/color/48/000000/angularjs.png',
+    width: 30
+  },
+  {
+    color: ' rgb(83, 165, 58)',
+    title: 'Node',
+    score: 3,
+    iconUrl: 'https://img.icons8.com/color/48/000000/nodejs.png',
+    width: 45
+  },
+  {
+    color: '#e7a718',
+    title: 'Flask',
+    score: 2,
+    iconUrl: 'https://img.icons8.com/color/48/000000/python.png',
+    width: 35
+  },];
 
   // bar variables
   mode = 'determinate';
@@ -89,6 +109,8 @@ export class RightDetailsPanelComponent implements OnInit {
       { value: 40, bufferValue: 75, mode: 'determinate', style: 'block-3', percent: 40, title: 'Python' },
       { value: 50, bufferValue: 75, mode: 'determinate', style: 'block-6', percent: 50, title: 'MongoDB' }
     ];
+
+    console.log(this.frameworkData);
 
   }
 

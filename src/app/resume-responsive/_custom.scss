@@ -1,0 +1,28 @@
+@mixin flexBox($direction) {
+    height: 100vh;
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    height: 100vh;
+    color: $textColor;
+    background: lightblue;
+    button {
+        color: $textColor;
+        &:hover {
+            background: red;
+        }
+    }
+}
+
+.contact {
+    background: $primatyBtn;
+    button {
+        // &::after{
+        //    content: 'something nice';
+        // }
+    }
+}

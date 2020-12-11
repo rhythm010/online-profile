@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class BubbleProgressComponent implements OnInit {
 
-  mainList = [1,2,3,4,5];
+  mainList = [1, 2, 3, 4, 5];
 
   @Input()
   data = {
@@ -22,6 +22,9 @@ export class BubbleProgressComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('tactical scope');
+    console.log(this.data);
+    
   }
 
 }

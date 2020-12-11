@@ -1,0 +1,203 @@
+.outest-container {
+  height: auto;
+  width: 100%;
+  background: #2b2b2b;
+  padding: 40px 40px 20px 30px;
+}
+
+.outest-container .page-navgation {
+  cursor: pointer;
+  margin-bottom: 4px !important;
+  color: white;
+}
+
+.outest-container .outer-container {
+  width: 100%;
+  background: #242121;
+}
+
+.outest-container .outer-container .person-flex {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.outest-container .outer-container .person-flex .name-and-designation {
+  height: 100%;
+}
+
+.outest-container .outer-container .person-flex .name-and-designation .name {
+  color: white;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.outest-container .outer-container .person-flex .name-and-designation .designation {
+  color: #4183a4;
+  font-family: Roboto;
+  font-weight: 300;
+}
+
+.outest-container .outer-container .person-flex .detail-element {
+  font-family: Roboto;
+}
+
+.outest-container .outer-container .person-flex .detail-element .header {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.outest-container .outer-container .person-flex .detail-element .ans {
+  color: #888787;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.outest-container .outer-container .person-flex .resume-download-container {
+  position: absolute;
+  right: 1%;
+  top: 5%;
+}
+
+.outest-container .outer-container .person-flex .resume-download-container .download-resume-img {
+  width: 21px;
+  cursor: pointer;
+}
+
+.outest-container .outer-container .description {
+  height: 60px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: Roboto;
+  color: #888787;
+}
+
+.outest-container .profile-pic-xs {
+  height: 190px !important;
+}
+
+.outest-container .name-des-xs {
+  height: 131px !important;
+}
+
+.outest-container .other-details-xs {
+  height: 154px !important;
+}
+
+.outest-container .person-flex-part {
+  min-height: 100vh !important;
+}
+
+.outest-container .details-header-margin {
+  margin-right: 10px !important;
+}
+
+.outest-container .light-blue {
+  color: #4183a4 !important;
+}
+
+.outest-container .profile-pic {
+  width: 164px;
+}
+
+.outest-container .second-container {
+  width: 100%;
+  height: auto !important;
+  color: white;
+  margin-bottom: 2px !important;
+  background: #242121;
+}
+
+.outest-container .second-container .second-flex-container {
+  color: white;
+  height: auto;
+}
+
+.outest-container .second-container .second-flex-container .expansion-container {
+  padding: 10px;
+  border-right: 4px solid #2b2b2b;
+}
+
+.outest-container .second-container .second-flex-container .stats-container {
+  padding: 10px;
+  height: auto;
+}
+
+.outest-container .second-container .second-flex-container .stats-container-xs {
+  min-height: 50vh !important;
+}
+
+.flex-second-container {
+  min-height: 50vh !important;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.footer-container {
+  color: #a5a0a0;
+  font-family: monospace;
+  font-size: 10px;
+}
+
+.outer-container {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.outer-container .inner-container {
+  display: block;
+  border: 1px solid blue;
+  padding: 20px;
+}
+
+.outer-container .inner-container-2 {
+  display: block;
+  border: 1px solid red;
+  padding: 20px;
+  height: 300px;
+  width: 200px;
+}
+
+.outer-container .inner-container-3 {
+  border: 1px solid lightcoral;
+  height: 100%;
+  position: relative;
+}
+
+.outer-container .small-box-0 {
+  border: 2px solid green;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.outer-container .small-box {
+  border: 2px solid black;
+  width: 40px;
+  height: 40px;
+}
+
+.header {
+  height: 100vh;
+  color: #691562;
+  background: lightblue;
+}
+
+.header button {
+  color: #691562;
+}
+
+.header button:hover {
+  background: red;
+}
+
+.contact {
+  background: #a02e2e;
+}
+/*# sourceMappingURL=resume-responsive.component.css.map */

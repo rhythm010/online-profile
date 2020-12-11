@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-resume',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent implements OnInit {
+
+  isFreeLancing: boolean = false;
 
   arr = [{
     name: 'Name',
@@ -44,11 +47,11 @@ export class ResumeComponent implements OnInit {
 
         pointers: [
           'Developed reusable UI components using Angular 2/8, Typescript, Javascript with Material Design themes using HTML5, CSS/SASS styling',
-          'Exposed the developed UI components to REST APIs using Services. Designed efficient and dynamic API interaction for reusability',
+          'Exposed the developed UI components to REST APIs using Services. Developed multi-layer service interactions for API Error Handling.',
           'Built the Front-End Architecture for Authorization & Authentication for a multi-level authorization access to routes/pages',
-          'Worked with Charting Libraries like Charts.JS, Ng-Charts for data representation and plotting',
-          'Worked in converting an existing Angular application into a Progressive Web Applications (PWA)',
-          'Help in address and recognise existing issues and problems at code levels and take up side projects to solve them',
+          'Worked with Charting Libraries like Charts.JS, ng-2-charts for data representation and plotting',
+          'Worked in PWA - Progressive Web Applications for Angular',
+          'Helped to address and recognise existing issues and problems at code levels and take up side projects to solve them',
           'Have Exposure towards creating REST API\'s using NodeJS and ExpressJS along with MongoDB'
         ],
         startYear: 2019,
@@ -131,20 +134,18 @@ export class ResumeComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    this.isFreeLancing = (this.router.url.indexOf('free-lancing') >= 0) ? true : false;
+    console.log(this.isFreeLancing);
+    
   }
 
   // method will be used to download the resume from the site
   downloadResume() {
-
+    const url = 'https://firebasestorage.googleapis.com/v0/b/online-profile-16a6e.appspot.com/o/RHYTHM%20KHANNA.pdf?alt=media&token=e42ccc38-40dc-4544-91a4-4f3a6825ce06';
+    window.open(url, "_blank");
   }
 
 }
-
-// https://www.techmahindra.com/en-in/techmnxt/techbets/new-age-delivery/ - nad
-// https://cache.techmahindra.com/static/img/pdf/Xretail-Brochure-2.pdf - x retail
-
-
-// <img src="https://img.icons8.com/ultraviolet/50/000000/police-badge.png"/> - badge for top performance

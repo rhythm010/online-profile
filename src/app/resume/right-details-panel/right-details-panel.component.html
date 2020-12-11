@@ -25,7 +25,7 @@
 
   </div>
 
-  <div class="programming-header" fxLayoutAlign="center center" (click)="show = !show">
+  <div class="programming-header" fxLayoutAlign="center center" fxLayoutAlign.xs="center center" (click)="show = !show">
     PROGRAMMING EXPERIENCE
   </div>
 
@@ -44,12 +44,13 @@
     </div>
   </div>
 
-  <div class="programming-header" [ngStyle.xs]="{'display': 'none'}" fxLayoutAlign="center center" (click)="show = !show">
+  <div class="programming-header" fxLayoutAlign="center center" (click)="show = !show">
     FRAMEWORKS USED
   </div>
-
-  <div style="color: white;" [ngStyle.xs]="{'display': 'none'}">
+  <!-- [ngStyle.xs]="{'display': 'block'}" -->
+  <div>
     <app-bubble-progress *ngFor="let bubble of frameworkData" [data]="bubble"></app-bubble-progress>
   </div>
 
+  <!-- [ngStyle.xs]="{'display': 'none'}" -->
 </div>

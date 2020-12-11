@@ -1,4 +1,4 @@
-  <div class="outest-container" fxLayout="column" fxLayoutAlign="start center"
+<div class="outest-container" fxLayout="column" fxLayoutAlign="start center"
     [ngStyle.xs]="{'min-height':'150vh !important'}" fxLayoutGap="40px">
 
     <div fxFlex="40" class="outer-container bottom-border" [ngClass.xs]="'person-flex-part'">
@@ -79,27 +79,34 @@
         </div>
     </div>
     <!-- [ngStyle.xs]="{'min-height':'70vh !important'}" -->
-    <div fxFlex class="second-container">
+    <div fxFlex class="second-container" [ngStyle.xs]="{'padding-bottom': '60vh'}">
 
         <div fxLayout="row" fxLayout.xs="column" [ngClass.xs]="'flex-second-container'" fxLayoutAlign="start start"
             fxLayoutAlign.xs="center center" class="second-flex-container">
-            <div fxFlex=75 fxFlex.xs="100" class="expansion-container full-height" [ngStyle.xs]="{'display': 'none'}">
+            <div *ngIf="!isFreeLancing" fxFlex=75 fxFlex.xs="100" class="expansion-container full-height"
+                [ngStyle.xs]="{'display': 'none'}">
                 <app-expand-details [themeColor]="'#20cae5'" [expansionData]="expansionInfoEmployment">
                 </app-expand-details>
                 <app-expand-details [themeColor]="'rgb(83, 165, 58)'" [expansionData]="expansionInfoTechContribution">
                 </app-expand-details>
             </div>
 
+            <div *ngIf="isFreeLancing" fxLayoutAlign="center center" style="color: white">
+                For Free lancing work
+            </div>
+
             <div fxFlex="25" fxFlex.xs="100" class="stats-container" [ngClass.xs]="'stats-container-xs'">
                 <app-right-details-panel [frameworkData]="frameWorkData"></app-right-details-panel>
             </div>
+            <!-- [frameworkData]="frameWorkData" -->
 
         </div>
 
     </div>
-    <!-- <div class="full-height full-width footer-container" fxLayoutAlign="end center">
+    <div class="footer-container" fxLayoutAlign="end center">
         Developed in <span><img style="width: 15px; margin-left: 4px; margin-right: 4px;"
-                src="https://img.icons8.com/color/48/000000/angularjs.png" /></span> by
-        me from <a style="margin-left: 4px; color: #4b4fbb;" href="https://www.google.com">Scratch </a>
-    </div> -->
+                src="https://img.icons8.com/color/48/000000/angularjs.png" /></span>
+        from <a style="margin-left: 4px; color: #4b4fbb;" target="_blank"
+            href="https://github.com/rhythm010/online-profile/tree/master">Scratch </a>
+    </div>
 </div>

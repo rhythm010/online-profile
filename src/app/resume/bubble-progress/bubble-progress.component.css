@@ -1,0 +1,16 @@
+.bubble-outer-container {
+  padding: 10px;
+  color: white;
+}
+
+.bubble-outer-container .round-figure {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid #575656;
+}
+
+.bubble-outer-container .skill-container {
+  color: #c3b5b5;
+}
+/*# sourceMappingURL=bubble-progress.component.css.map */
