@@ -3,7 +3,7 @@ import 'hammerjs';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppMaterialModule } from './app.material.module';
 import { AppComponent } from './app.component';
@@ -17,6 +17,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ResumeResponsiveComponent } from './resume-responsive/resume-responsive.component';
 import { BubbleProgressComponent } from './resume/bubble-progress/bubble-progress.component';
+import { LoginComponent } from './jwd_work/login/login.component';
+import { HomeComponent } from './jwd_work/home/home.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -28,12 +32,14 @@ import { BubbleProgressComponent } from './resume/bubble-progress/bubble-progres
     FlexLayoutModule,
     ChartsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [ThemeService],
   exports: [ChartsModule],
   declarations: [AppComponent, ResumeComponent, ExpandDetailsComponent, RightDetailsPanelComponent,
-    ResumeResponsiveComponent, BubbleProgressComponent],
+    ResumeResponsiveComponent, BubbleProgressComponent, HomeComponent, LoginComponent],
   entryComponents: [],
   bootstrap: [AppComponent],
 })

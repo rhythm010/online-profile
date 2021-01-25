@@ -1,16 +1,29 @@
+import { APP_BASE_HREF } from '@angular/common';
 import { TestBed, async } from '@angular/core/testing';
+import { Routes, RouterModule } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './jwd_work/login/login.component';
 
 describe('AppComponent', () => {
+  const routes: Routes = [
+    {
+      path: 'login', component: LoginComponent
+    }
+  ];
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        RouterModule.forRoot(routes)
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        LoginComponent
       ],
+      providers: [
+        { provide: APP_BASE_HREF, useValue: '/' }
+      ]
     }).compileComponents();
   }));
 
@@ -32,4 +45,5 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to online-resume!');
   });
+
 });
